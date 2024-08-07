@@ -23,7 +23,7 @@ def get_stock_data():
             symbol=ticker,
             screener="india",  # Screener for Indian market
             exchange="NSE",    # Exchange set to NSE
-            interval=Interval.INTERVAL_5_MINUTESfla
+            interval=Interval.INTERVAL_5_MINUTES
         )
         analysis = handler.get_analysis()
         current_price = analysis.indicators.get('close')
